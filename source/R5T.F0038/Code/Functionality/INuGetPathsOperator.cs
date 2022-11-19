@@ -10,7 +10,8 @@ namespace R5T.F0038
 	{
 		public void OpenNuGetCacheDirectory()
         {
-			F0034.WindowsExplorerOperator.Instance.OpenDirectoryInExplorer(@"%UserProfile%\.nuget\packages");
+			F0034.WindowsExplorerOperator.Instance.OpenDirectoryInExplorer(
+				Instances.DirectoryPaths.LocalNuGetPackagesDirectory);
         }
 	}
 }
